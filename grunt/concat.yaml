@@ -1,0 +1,18 @@
+global 	:
+    options 	: 
+        separator 	: ";"
+    src 	: 
+        #- "<%= src %>/js/lib/handlebars.js"
+        - "<%= src %>/js/lib/react.js"
+        - "<%= src %>/js/lib/JQ.js"
+        - "<%= src %>/js/lib/require.js"
+        - "<%= src %>/js/requireConfig.js"
+        - "<%= src %>/js/util/**/*.js"
+    dest 	: "<%= dev %>/js/global.js"
+
+mock    :
+    options     :
+        separator   : ""
+    src         : 
+        - "<%= src %>/mock/**/*.js"
+    dest        : <%= dev %>/mock/content.js

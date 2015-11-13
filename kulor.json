@@ -1,0 +1,6 @@
+{
+    "initType"  : {
+        "kulor"     : "https://github.com/kulor-developer/kulor.git" ,
+        "koa" 		: "https://github.com/kulor-developer/kulor-init-koa.git"
+    }
+}

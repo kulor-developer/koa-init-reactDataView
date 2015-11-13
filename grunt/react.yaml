@@ -1,0 +1,3 @@
+dynamic_mappings  :
+    files   : 
+        - { expand : true , cwd : "<%= src %>/js/" , src : "**/*.jsx" , dest : "<%= dev %>/js" , ext : ".js" }
