@@ -54,7 +54,7 @@ module.exports  = function( bower , grunt , tool , log , callback ) {
     self    = this;
     log( "start load kulor-reactDataView" );
     tool.file.copy( path.resolve( __dirname , "src/js/util/reactDataView.js" ) , path.resolve( self.cwd , "src/js/util/reactDataView.js" ) );
-    tool.file.copy( path.resolve( self.cwd , "src/js/lib/react.js" ) , path.resolve( self.cwd , "src/js/lib/react.js" ) );
+    tool.file.copy( path.resolve( __dirname , "src/js/lib/react.js" ) , path.resolve( self.cwd , "src/js/lib/react.js" ) );
     tool.file.copy( path.resolve( __dirname , "grunt/react.yaml" ) , path.resolve( self.cwd , "grunt/react.yaml" ) );
     replacePackageJson( grunt );
     addReactWatch( grunt , tool );
